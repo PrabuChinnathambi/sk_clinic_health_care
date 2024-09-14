@@ -11,6 +11,14 @@ import Diabetic_Management_Img from "./images/Our_Areas_Images/Diabetic_Manageme
 import Emergency_Medical_Services_Img from "./images/Our_Areas_Images/Emergency_Medical_Services.jpg";
 import Expert_Wound_Care_Img from "./images/Our_Areas_Images/Expert_Wound_Care.jpg";
 import Hypertension_Control_Img from "./images/Our_Areas_Images/Hypertension.jpg";
+import image1 from "./images/Clinic_Real_Images/image1.jpg";
+import image2 from "./images/Clinic_Real_Images/image2.jpg";
+import image3 from "./images/Clinic_Real_Images/image3.jpg";
+import image4 from "./images/Clinic_Real_Images/image4.jpg";
+import image5 from "./images/Clinic_Real_Images/image5.jpeg";
+import image6 from "./images/Clinic_Real_Images/image6.jpg";
+import image7 from "./images/Clinic_Real_Images/image7.jpg";
+import image8 from "./images/Clinic_Real_Images/image8.jpg";
 
 export {
   logo,
@@ -26,4 +34,12 @@ export {
   cyberImg,
   noorShop,
   stethoscopeBannerImage,
+  image1,
+  image2,
+  image3,
+  image4,
+  image5,
+  image6,
+  image7,
+  image8,
 };
