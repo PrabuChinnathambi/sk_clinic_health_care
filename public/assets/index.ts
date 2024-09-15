@@ -19,8 +19,18 @@ import image5 from "./images/Clinic_Real_Images/image5.jpeg";
 import image6 from "./images/Clinic_Real_Images/image6.jpg";
 import image7 from "./images/Clinic_Real_Images/image7.jpg";
 import image8 from "./images/Clinic_Real_Images/image8.jpg";
+import doctor_1_Icon from "./images/Icons/doctor_1.png";
+import doctor_2_Icon from "./images/Icons/doctor_2.png";
+import doctors_room_Icon from "./images/Icons/doctors-room.png";
+import medical_team_Icon from "./images/Icons/medical-team.png";
+import stethoscope_Icon from "./images/Icons/stethoscope.png";
 
 export {
+  doctor_1_Icon,
+  doctor_2_Icon,
+  doctors_room_Icon,
+  medical_team_Icon,
+  stethoscope_Icon,
   logo,
   Comprehensive_ECG_Testing_Img,
   Diabetic_Management_Img,
