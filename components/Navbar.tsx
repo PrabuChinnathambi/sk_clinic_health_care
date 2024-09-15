@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import Image from "next/image";
-import { logo } from "@/public/assets";
+// import { logo } from "@/public/assets";
 import Link from "next/link";
 import { useState } from "react";
 import { TbBrandGithub } from "react-icons/tb";
@@ -49,7 +49,7 @@ const Navbar = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.1 }}
           >
-            <Image className="sk_logo w-14" src={logo} alt="logo" />
+            {/* <Image className="sk_logo w-14" src={logo} alt="logo" /> */}
           </motion.div>
         </Link>
         {/* ============ Logo End here ============== */}

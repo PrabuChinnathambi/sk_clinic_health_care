@@ -1,4 +1,4 @@
-import logo from "./images/logo.jpg";
+// import logo from "./images/logo.jpg";
 import stethoscopeBannerImage from "./images/stethoscopeBannerImage.jpg";
 import profileImg from "./images/profile.png";
 import amazonImg from "./images/amazonImg.png";
@@ -31,7 +31,7 @@ export {
   doctors_room_Icon,
   medical_team_Icon,
   stethoscope_Icon,
-  logo,
+  // logo,
   Comprehensive_ECG_Testing_Img,
   Diabetic_Management_Img,
   Emergency_Medical_Services_Img,
