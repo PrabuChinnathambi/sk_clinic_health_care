@@ -9,7 +9,7 @@ const About = () => {
       id="about"
       className="max-w-containerSmall mx-auto py-10 mdl:py-22 flex flex-col gap-8"
     >
-      <SectionTitle title="About Us" titleNo="02" />
+      <SectionTitle title="About Us" titleNo="02" displayLine={true} />
       <div className="flex flex-col lgl:flex-row gap-28">
         <div className="w-full lgl:w-2/3 text-base text-textDark font-medium flex flex-col gap-4">
           <p>
@@ -22,17 +22,15 @@ const About = () => {
           <p>
             <span className="text-textGreen">Dr. Santhana Kumar, MBBS, </span>
             is our skilled general physician with six years of experience in the
-            field. He is available for consultations from 5 PM to 9 PM, offering
+            field. He is available for consultations from 5 pm to 9 pm, offering
             expert care and attention to each patient’s unique health concerns.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio rem
-            accusantium fugiat veritatis, quidem repellat{" "}
           </p>
           <p>
             <span className="text-textGreen">
               Dr. Kavitha, MBBS MD in General Medicine,{" "}
             </span>
             complements our team with her extensive expertise and six years of
-            experience. She is available from 9 AM to 2 PM, providing
+            experience. She is available from 9 am to 2 pm, providing
             comprehensive care and personalized treatment plans to ensure your
             well-being.
           </p>
@@ -49,7 +47,7 @@ const About = () => {
             common health conditions, including respiratory issues,
             cardiovascular problems, and digestive disorders. Our experienced
             team offers effective management for conditions like asthma,
-            hypertension, and GERD, utilizing both medication and lifestyle
+            hypertension, and GERD, utilizing both medications and lifestyle
             recommendations.
           </p>
           <p>
@@ -112,7 +110,7 @@ const About = () => {
         <div className="flex flex-col gap-16 w-full lgl:w-1/3 ">
           <div className="h-80 relative group">
             <div className="absolute w-full h-80 -left-6 -top-6 rounded-lg ">
-              <div className="w-full h-full relative z-20 flex pl-6 lgl:pl-0">
+              <div className="w-full h-full relative z-20 flex pl-12 lgl:pl-0">
                 <Image
                   className="rounded-lg h-full object-cover"
                   src={santhanaKumarImg}
@@ -125,7 +123,7 @@ const About = () => {
           </div>
           <div className="h-80 relative group">
             <div className="absolute w-full h-80 -left-6 -top-6 rounded-lg ">
-              <div className="w-full h-full relative z-20 flex pl-6 lgl:pl-0">
+              <div className="w-full h-full relative z-20 flex pl-12 lgl:pl-0">
                 <Image
                   className="rounded-lg w-full h-full object-cover"
                   src={kavithaImg}

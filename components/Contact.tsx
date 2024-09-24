@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useState } from "react";
+import SectionTitle from "./SectionTitle";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -46,9 +47,7 @@ const Contact = () => {
       id="contact"
       className="max-w-contentContainer mx-auto py-10 xl:py-32 flex flex-col gap-4 items-center justify-center"
     >
-      <p className="font-titleFont text-lg text-textGreen font-semibold flex items-center tracking-wide">
-        Contact Us
-      </p>
+      <SectionTitle title="Contact Us" titleNo="05" displayLine={false} />
       <h2 className="font-titleFont text-5xl font-semibold">Get In Touch</h2>
       <section className=" w-full py-8">
         <div className="max-w-4xl mx-auto px-4 flex flex-col lg:flex-row gap-8">
@@ -60,13 +59,9 @@ const Contact = () => {
               Our Address
             </h3>
             <p className="text-sm md:text-base">
-              113, Balaji Nagar, New Siddhapudur, Coimbatore, Tamil Nadu 641044
+              Sri Krishna Complex, 636/3B3 Tank ST, Sunnambukalvai Stop,
+              Athipalayam Road, Coimbatore - 641049
             </p>
-
-            <h3 className="text-xl font-bold2 py-3 text-textGreen">
-              Areas Served
-            </h3>
-            <p className="text-sm md:text-base">Coimbatore</p>
 
             <h3 className="text-xl font-bold2 py-3 text-textGreen">
               Hours of Operation

@@ -57,11 +57,17 @@ const Banner = () => {
         </a>
       </section>
       <section className="basis-1/4 ">
-        <Image
-          className="stethoscope_banner_img rounded-lg"
-          src={stethoscopeBannerImage}
-          alt="img"
-        />
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5, delay: 0.8 }}
+        >
+          <Image
+            className="stethoscope_banner_img rounded-lg"
+            src={stethoscopeBannerImage}
+            alt="img"
+          />
+        </motion.div>
       </section>
     </div>
   );

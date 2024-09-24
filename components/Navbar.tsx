@@ -12,6 +12,7 @@ import {
 } from "react-icons/sl";
 import { MdOutlineClose } from "react-icons/md";
 import { motion } from "framer-motion";
+import { SK_Healthcare_Logo } from "@/public/assets";
 
 const Navbar = () => {
   const ref = useRef<string | any>("");
@@ -49,7 +50,11 @@ const Navbar = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.1 }}
           >
-            {/* <Image className="sk_logo w-14" src={logo} alt="logo" /> */}
+            <Image
+              className="sk_logo w-10 md:w-14 "
+              src={SK_Healthcare_Logo}
+              alt="logo"
+            />
           </motion.div>
         </Link>
         {/* ============ Logo End here ============== */}
