@@ -189,7 +189,7 @@ const Archive = () => {
                 transition={{ delay: 0.1 }}
               >
                 <Image
-                  className="h-auto max-w-full rounded-lg hover:-translate-y-2 transition-transform duration-300 cursor-pointer object-cover object-center"
+                  className="h-auto md:h-[315px] max-w-full rounded-lg hover:-translate-y-2 transition-transform duration-300 cursor-pointer object-cover object-center"
                   src={image1}
                   alt=""
                   width={1200} // Example width
@@ -252,7 +252,7 @@ const Archive = () => {
               >
                 <Image
                   className="h-auto max-w-full rounded-lg hover:-translate-y-2 transition-transform duration-300 cursor-pointer object-cover object-center"
-                  src={image5}
+                  src={image13}
                   alt=""
                   width={1200} // Example width
                   height={800}
@@ -313,7 +313,7 @@ const Archive = () => {
                 transition={{ delay: 0.1 }}
               >
                 <Image
-                  className="h-auto max-w-full rounded-lg hover:-translate-y-2 transition-transform duration-300 cursor-pointer object-cover object-center"
+                  className="h-auto md:h-[450px] max-w-full rounded-lg hover:-translate-y-2 transition-transform duration-300 cursor-pointer object-cover object-center"
                   src={image9}
                   alt=""
                   width={1200} // Example width
@@ -360,8 +360,8 @@ const Archive = () => {
                 transition={{ delay: 0.1 }}
               >
                 <Image
-                  className="h-auto max-w-full rounded-lg hover:-translate-y-2 transition-transform duration-300 cursor-pointer object-cover object-center"
-                  src={image13}
+                  className="h-auto md:h-[350px] max-w-full rounded-lg hover:-translate-y-2 transition-transform duration-300 cursor-pointer object-cover object-center"
+                  src={image5}
                   alt=""
                   width={1200} // Example width
                   height={800}

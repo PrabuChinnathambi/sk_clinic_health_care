@@ -169,7 +169,7 @@ const Navbar = () => {
                 className="text-3xl text-textGreen cursor-pointer hover:text-red-500 absolute top-4 right-4"
               />
               <div className="flex flex-col items-center gap-7">
-                <ul className="flex flex-col text-base gap-7">
+                <ul className="flex flex-col text-base gap-10 mt-6">
                   <Link
                     className="flex items-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link"
                     href="#home"
@@ -227,7 +227,7 @@ const Navbar = () => {
                       Gallery
                     </motion.li>
                   </Link>
-                  <Link
+                  {/* <Link
                     className="w-32 h-10 rounded-md text-textGreen text-[13px] border border-textGreen hover:bg-hoverColor duration-300"
                     href="#contact"
                     onClick={handleScroll}
@@ -239,6 +239,20 @@ const Navbar = () => {
                     >
                       <span className="text-textGreen">04.</span>
                       Contact
+                    </motion.li>
+                  </Link> */}
+
+                  <Link
+                    className="px-4 py-2 rounded-md text-textGreen text-[13px] border border-textGreen hover:bg-hoverColor duration-300"
+                    href="#contact"
+                    onClick={handleScroll}
+                  >
+                    <motion.li
+                      initial={{ y: -10, opacity: 0 }}
+                      animate={{ y: 0, opacity: 1 }}
+                      transition={{ duration: 0.2, delay: 0.5, ease: "easeIn" }}
+                    >
+                      Contact Us
                     </motion.li>
                   </Link>
                 </ul>
@@ -252,7 +266,7 @@ const Navbar = () => {
                     Resume
                   </motion.button>
                 </a> */}
-                <div className="flex gap-4">
+                {/* <div className="flex gap-4">
                   <motion.a
                     initial={{ y: 20, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
@@ -308,17 +322,17 @@ const Navbar = () => {
                       <SlSocialInstagram />
                     </span>
                   </motion.a>
-                </div>
+                </div> */}
               </div>
 
               <motion.a
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 1.2, ease: "easeIn" }}
-                className="text-sm w-72 tracking-widest text-textGreen text-center mt-4"
+                className="text-sm w-72 tracking-widest text-textGreen text-center mt-8"
                 href="mailto:noor.jsdivs@gmail.com"
               >
-                <p>reactbd@proton.me</p>
+                <p>skhealthcare0709@gmail.com</p>
               </motion.a>
             </motion.div>
           </div>
