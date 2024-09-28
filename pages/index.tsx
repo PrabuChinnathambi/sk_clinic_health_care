@@ -40,7 +40,7 @@ export default function Home() {
             <Projects />
             <Archive />
             <Contact />
-            <Footer />
+            {/* <Footer /> */}
           </div>
           <motion.div
             initial={{ opacity: 0 }}
