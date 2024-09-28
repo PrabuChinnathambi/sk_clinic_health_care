@@ -112,7 +112,7 @@ const About = () => {
           <div className="flex flex-col gap-16 w-full md:flex-row md:justify-center lgl:w-1/3 lgl:flex-col">
             <div className="h-80 relative group">
               <div className=" w-full h-80 -left-6 -top-6 rounded-lg ">
-                <div className="w-full h-full md:w-[100%] md:h-[350px] lgl:w-[100%] relative z-20 flex pl-12 lgl:pl-0">
+                <div className="w-full h-full md:w-[100%] md:h-[350px] lgl:w-[100%] relative z-20 flex lgl:pl-0">
                   <Image
                     className="rounded-lg w-full h-full object-cover object-center"
                     src={santhanaKumarImg}
@@ -124,7 +124,7 @@ const About = () => {
             </div>
             <div className="h-80 relative group">
               <div className="w-full h-80 -left-6 -top-6 rounded-lg ">
-                <div className="w-full h-full md:w-[100%] md:h-[350px] lgl:w-[100%]  relative z-20 flex pl-12 lgl:pl-0">
+                <div className="w-full h-full md:w-[100%] md:h-[350px] lgl:w-[100%]  relative z-20 flex lgl:pl-0">
                   <Image
                     className="rounded-lg w-full h-full object-cover object-center"
                     src={kavithaImg}
