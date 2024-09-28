@@ -1,14 +1,18 @@
 import Link from "next/link";
-import { useState } from "react";
+import React, { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
 import SectionTitle from "./SectionTitle";
+import { toast } from "sonner";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
+    from_name: "",
+    from_email: "",
     phone: "",
     message: "",
   });
+
+  const form = useRef<HTMLFormElement>(null);
 
   const handleChange = (e: { target: { name: any; value: any } }) => {
     const { name, value } = e.target;
@@ -17,28 +21,34 @@ const Contact = () => {
 
   const handleSubmit = async (e: { preventDefault: () => void }) => {
     e.preventDefault();
-    try {
-      const response = await fetch("/api/sendEmail", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-      if (response.ok) {
-        alert("Message sent successfully!");
-        setFormData({
-          name: "",
-          email: "",
-          phone: "",
-          message: "",
-        });
-      } else {
-        alert("Failed to send message.");
-      }
-    } catch (error) {
-      console.error("Error:", error);
-      alert("An error occurred while sending the message.");
+
+    if (form.current) {
+      emailjs
+        .sendForm("service_fea9h7p", "template_pe6v54n", form.current, {
+          publicKey: "DnHDKJWuosxvHud0Q",
+        })
+        .then(
+          () => {
+            setFormData({
+              from_name: "",
+              from_email: "",
+              phone: "",
+              message: "",
+            });
+            toast.success("Mail Sent Successfully!!!", {
+              style: {
+                background: "#43ff64d9",
+              },
+            });
+          },
+          (error) => {
+            toast.success("Something went wrong!", {
+              style: {
+                background: "#f2380c",
+              },
+            });
+          }
+        );
     }
   };
 
@@ -99,7 +109,7 @@ const Contact = () => {
             <h3 className="text-2xl font-bold text-textGreen">
               Send Us a Message
             </h3>
-            <form onSubmit={handleSubmit} className="space-y-6 my-6">
+            <form ref={form} onSubmit={handleSubmit} className="space-y-6 my-6">
               <div>
                 <label htmlFor="name" className="block text-sm md:text-base">
                   Name
@@ -107,8 +117,8 @@ const Contact = () => {
                 <input
                   type="text"
                   id="name"
-                  name="name"
-                  value={formData.name}
+                  name="from_name"
+                  value={formData.from_name}
                   onChange={handleChange}
                   required
                   className="w-full mt-1 p-2 border border-gray-300 rounded-lg text-black"
@@ -122,8 +132,8 @@ const Contact = () => {
                 <input
                   type="email"
                   id="email"
-                  name="email"
-                  value={formData.email}
+                  name="from_email"
+                  value={formData.from_email}
                   onChange={handleChange}
                   required
                   className="w-full mt-1 p-2 border border-gray-300 rounded-lg text-black"
