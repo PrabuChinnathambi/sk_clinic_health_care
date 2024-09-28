@@ -3,20 +3,11 @@ import Image from "next/image";
 import { stethoscopeBannerImage } from "@/public/assets";
 import Link from "next/link";
 const Banner = () => {
-  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-    e.preventDefault();
-    const href = e.currentTarget.href;
-    const targetId = href.replace(/.*\#/, "");
-    const elem = document.getElementById(targetId);
-    elem?.scrollIntoView({
-      behavior: "smooth",
-    });
-    // Update the class name of the clicked link
-    const links = document.querySelectorAll(".nav-link");
-    links.forEach((link) => {
-      link.classList.remove("active");
-    });
-    e.currentTarget.classList.add("active");
+  const handleScroll = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
@@ -54,28 +45,17 @@ const Banner = () => {
           high-quality medical services to individuals and families. Our team of
           experienced general physicians, all holding an MBBS degree, provides
           comprehensive and compassionate care to patients of all ages.
-          {/* <a href="https://www.noormohammad.live/" target="_blank">
-          {" "}
-          <span className="text-textGreen inline-flex relative cursor-pointer h-7 overflow-x-hidden group">
-            Learn more
-            <span className="absolute w-full h-[1px] bg-textGreen left-0 bottom-1 -translate-x-[110%] group-hover:translate-x-0 transition-transform duration-500"></span>
-          </span>
-        </a> */}
         </motion.p>
-        <Link
-          className="flex items-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link"
-          href="#contact"
-          onClick={handleScroll}
+
+        <motion.button
+          initial={{ y: 10, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.9 }}
+          onClick={() => handleScroll("contact")}
+          className="w-52 h-14 text-sm font-titleFont border border-textGreen rounded-md text-textGreen tracking-wide flex items-center justify-center hover:bg-hoverColor duration-300 cursor-pointer"
         >
-          <motion.button
-            initial={{ y: 10, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.9 }}
-            className="w-52 h-14 text-sm font-titleFont border border-textGreen rounded-md text-textGreen tracking-wide hover:bg-hoverColor duration-300"
-          >
-            Book an Appointment
-          </motion.button>
-        </Link>
+          Book an Appointment
+        </motion.button>
       </section>
       <section className="basis-1/4 ">
         <motion.div

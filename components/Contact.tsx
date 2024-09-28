@@ -62,7 +62,7 @@ const Contact = () => {
       <section className=" w-full py-8">
         <div className="max-w-4xl mx-auto px-4 flex flex-col lg:flex-row gap-8">
           {/* Contact Info */}
-          <div className="w-full lg:w-1/2 bg-[#112240] shadow-md rounded-lg p-6">
+          <div className="w-full lg:w-1/2 bg-[#112240] shadow-md rounded-lg p-4 md:p-6">
             <h3 className="text-2xl font-bold text-textGreen">Contact Us</h3>
 
             <h3 className="text-xl font-bold2 py-3 text-textGreen">
