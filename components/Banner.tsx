@@ -1,7 +1,24 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { stethoscopeBannerImage } from "@/public/assets";
+import Link from "next/link";
 const Banner = () => {
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    e.preventDefault();
+    const href = e.currentTarget.href;
+    const targetId = href.replace(/.*\#/, "");
+    const elem = document.getElementById(targetId);
+    elem?.scrollIntoView({
+      behavior: "smooth",
+    });
+    // Update the class name of the clicked link
+    const links = document.querySelectorAll(".nav-link");
+    links.forEach((link) => {
+      link.classList.remove("active");
+    });
+    e.currentTarget.classList.add("active");
+  };
+
   return (
     <div className="mdl:flex flex-row justify-center items-center">
       <section
@@ -45,7 +62,11 @@ const Banner = () => {
           </span>
         </a> */}
         </motion.p>
-        <a href="https://github.com/noorjsdivs" target="_blank">
+        <Link
+          className="flex items-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link"
+          href="#contact"
+          onClick={handleScroll}
+        >
           <motion.button
             initial={{ y: 10, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -54,7 +75,7 @@ const Banner = () => {
           >
             Book an Appointment
           </motion.button>
-        </a>
+        </Link>
       </section>
       <section className="basis-1/4 ">
         <motion.div
