@@ -38,7 +38,6 @@ const Archive = () => {
 
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-8">
           <div>
-            a
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
