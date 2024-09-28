@@ -47,15 +47,18 @@ const Banner = () => {
           comprehensive and compassionate care to patients of all ages.
         </motion.p>
 
-        <motion.button
+        <motion.div
           initial={{ y: 10, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.9 }}
-          onClick={() => handleScroll("contact")}
-          className="w-52 h-14 text-sm font-titleFont border border-textGreen rounded-md text-textGreen tracking-wide flex items-center justify-center hover:bg-hoverColor duration-300 cursor-pointer"
         >
-          Book an Appointment
-        </motion.button>
+          <button
+            onClick={() => handleScroll("contact")}
+            className="w-52 h-14 text-sm font-titleFont border border-textGreen rounded-md text-textGreen tracking-wide flex items-center justify-center hover:bg-hoverColor duration-300 cursor-pointer"
+          >
+            Book an Appointment
+          </button>
+        </motion.div>
       </section>
       <section className="basis-1/4 ">
         <motion.div
