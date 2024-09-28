@@ -6,7 +6,10 @@ const Banner = () => {
   const handleScroll = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      // Introduce a slight delay to handle the scroll on mobile
+      setTimeout(() => {
+        element.scrollIntoView({ behavior: "smooth" });
+      }, 0); // A delay of 0ms, but effectively allows re-triggering
     }
   };
 
