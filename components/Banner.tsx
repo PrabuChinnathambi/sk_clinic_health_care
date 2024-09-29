@@ -44,7 +44,7 @@ const Banner = () => {
           transition={{ duration: 0.5, delay: 0.8 }}
           className="text-base md:max-w-[650px] text-textDark font-medium"
         >
-          Our clinic is a reputable healthcare provider dedicated to offering
+          Our clinic is a reputable healthcare provider dedicated to offer
           high-quality medical services to individuals and families. Our team of
           experienced general physicians, all holding an MBBS degree, provides
           comprehensive and compassionate care to patients of all ages.
