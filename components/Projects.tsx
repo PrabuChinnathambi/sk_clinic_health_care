@@ -36,7 +36,7 @@ const Projects = () => {
                   src={Diabetic_Management_Img}
                   alt="amazonImg"
                 />
-                <div className="absolute w-full h-full bg-textGreen/10 rounded-lg top-0 left-0 group-hover:bg-transparent duration-300"></div>
+                <div className="absolute w-full h-full  rounded-lg top-0 left-0 group-hover:bg-transparent duration-300"></div>
               </div>
             </div>
             <div className="w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between items-end xl:-ml-16 z-10">
@@ -76,17 +76,17 @@ const Projects = () => {
                   src={Hypertension_Control_Img}
                   alt="cyberImg"
                 />
-                <div className="absolute w-full h-full bg-textGreen/10 rounded-lg top-0 left-0 group-hover:bg-transparent duration-300"></div>
+                <div className="absolute w-full h-full  rounded-lg top-0 left-0 group-hover:bg-transparent duration-300"></div>
               </div>
             </div>
-            <div className="w-full xl:w-1/2 flex flex-col gap-6 justify-between items-end  z-10">
+            <div className="w-full xl:w-1/2 flex flex-col gap-6 justify-between items-end z-10">
               <div className="w-full md:w-fit">
                 <p className="font-titleFont text-textGreen text-sm tracking-wide w-full md:w-auto md:text-right">
                   How We Can Help:
                 </p>
                 <h3 className="text-2xl font-bold">Hypertension Control</h3>
               </div>
-              <p className="bg-[#112240] text-sm md:text-base p-2 md:p-6 rounded-md md:text-right">
+              <p className="text-sm md:text-base bg-[#112240] p-2 md:p-6 rounded-md xl:-mr-16 md:text-right">
                 We provide thorough assessment and management of hypertension
                 with regular blood pressure monitoring, prescription of
                 antihypertensive medications, and guidance on lifestyle changes
@@ -114,7 +114,7 @@ const Projects = () => {
                   src={Expert_Wound_Care_Img}
                   alt="noorShop"
                 />
-                <div className="absolute w-full h-full bg-textGreen/10 rounded-lg top-0 left-0 group-hover:bg-transparent duration-300"></div>
+                <div className="absolute w-full h-full  rounded-lg top-0 left-0 group-hover:bg-transparent duration-300"></div>
               </div>
             </div>
             <div className="w-full xl:w-1/2 flex flex-col gap-6 justify-between items-end xl:-ml-16 z-10">
@@ -151,7 +151,7 @@ const Projects = () => {
                   src={Comprehensive_ECG_Testing_Img}
                   alt="cyberImg"
                 />
-                <div className="absolute w-full h-full bg-textGreen/10 rounded-lg top-0 left-0 group-hover:bg-transparent duration-300"></div>
+                <div className="absolute w-full h-full  rounded-lg top-0 left-0 group-hover:bg-transparent duration-300"></div>
               </div>
             </div>
             <div className="w-full xl:w-1/2 flex flex-col gap-6 justify-between items-end z-10">
@@ -191,7 +191,7 @@ const Projects = () => {
                   src={Emergency_Medical_Services_Img}
                   alt="noorShop"
                 />
-                <div className="absolute w-full h-full bg-textGreen/10 rounded-lg top-0 left-0 group-hover:bg-transparent duration-300"></div>
+                <div className="absolute w-full h-full  rounded-lg top-0 left-0 group-hover:bg-transparent duration-300"></div>
               </div>
             </div>
             <div className="w-full xl:w-1/2 flex flex-col gap-6 justify-between items-end xl:-ml-16 z-10">
