@@ -59,7 +59,7 @@ const Projects = () => {
               </p>
               <ul className="w-full flex flex-col md:w-fit md:flex-row gap-2 md:gap-4 text-xs md:text-sm font-titleFont tracking-wide text-textDark">
                 <li>Increased Thirst</li>
-                <li>Fatigue</li>
+                {/* <li>Fatigue</li> */}
                 <li> Blurred Vision</li>
                 <li>Frequent Urination</li>
                 <li>Slow-Healing</li>
