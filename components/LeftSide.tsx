@@ -5,6 +5,8 @@ import {
   SlSocialFacebook,
   SlSocialInstagram,
 } from "react-icons/sl";
+import { FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { RiMailSettingsLine } from "react-icons/ri";
 import {
   doctor_1_Icon,
   doctor_2_Icon,
@@ -15,13 +17,20 @@ import {
 import Image from "next/image";
 
 const LeftSide = () => {
+  const phoneNumber = "+917598776007"; // Replace with your WhatsApp number (including country code)
+  const message = "Hello, I’d like to inquire about your service."; // Pre-filled message
+
   return (
     <div className="w-full h-full flex flex-col items-center justify-end gap-4 text-textLight">
       <div className="flex flex-col gap-4">
-        <a href="https://github.com/noorjsdivs" target="_blank">
+        <a
+          href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+            message
+          )}`}
+          target="_blank"
+        >
           <span className="w-10 h-10 text-xl bg-hoverColor rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300">
-            {/* <TbBrandGithub /> */}
-            <Image src={doctor_1_Icon} alt={""} className="w-6 h-6" />
+            <FaWhatsapp />
           </span>
         </a>
         <a
@@ -29,8 +38,7 @@ const LeftSide = () => {
           target="_blank"
         >
           <span className="w-10 h-10 text-xl bg-hoverColor rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300">
-            {/* <SlSocialYoutube /> */}
-            <Image src={doctor_2_Icon} alt={""} className="w-6 h-6" />
+            <SlSocialFacebook />
           </span>
         </a>
         <a
@@ -38,20 +46,18 @@ const LeftSide = () => {
           target="_blank"
         >
           <span className="w-10 h-10 text-xl bg-hoverColor rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300">
-            {/* <SlSocialLinkedin /> */}
-            <Image src={medical_team_Icon} alt={""} className="w-6 h-6" />
+            <SlSocialInstagram />
           </span>
         </a>
         <a href="https://www.facebook.com/Noorlalu143/" target="_blank">
           <span className="w-10 h-10 text-xl bg-hoverColor rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300">
-            {/* <SlSocialFacebook /> */}
-            <Image src={stethoscope_Icon} alt={""} className="w-6 h-6" />
+            <RiMailSettingsLine />
           </span>
         </a>
         <a href="https://www.instagram.com/simplenoor143/" target="_blank">
           <span className="w-10 h-10 text-xl bg-hoverColor rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300">
             {/* <SlSocialInstagram /> */}
-            <Image src={doctors_room_Icon} alt={""} className="w-6 h-6" />
+            <FaLinkedin />
           </span>
         </a>
       </div>

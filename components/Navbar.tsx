@@ -13,6 +13,7 @@ import {
 import { MdOutlineClose } from "react-icons/md";
 import { motion } from "framer-motion";
 import { SK_Healthcare_Logo } from "@/public/assets";
+import Footer from "./Footer";
 
 const Navbar = () => {
   const ref = useRef<string | any>("");
@@ -334,6 +335,10 @@ const Navbar = () => {
               >
                 <p>skhealthcare0709@gmail.com</p>
               </motion.a>
+
+              <div className="my-8">
+                <Footer />
+              </div>
             </motion.div>
           </div>
         )}
