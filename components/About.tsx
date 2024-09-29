@@ -15,13 +15,15 @@ const About = () => {
           <div className="w-full lgl:w-2/3 text-base text-textDark font-medium flex flex-col gap-4">
             <p>
               Welcome to SK Healthcare, where your health is our top priority.
-              We are dedicated to providing high-quality medical care with a
+              We are dedicated to provide high-quality medical care with a
               personalized approach. Our practice is led by a team of
               experienced and compassionate professionals who are here to
               support your health needs.
             </p>
             <p>
-              <span className="text-textGreen">Dr. Santhana Kumar, MBBS, </span>
+              <span className="text-textGreen">
+                Dr. M. Santhana Kumar, MBBS,{" "}
+              </span>
               is our skilled general physician with six years of experience in
               the field. He is available for consultations from 5 pm to 9 pm,
               offering expert care and attention to each patient’s unique health
@@ -29,7 +31,7 @@ const About = () => {
             </p>
             <p>
               <span className="text-textGreen">
-                Dr. Kavitha, MBBS MD in General Medicine,{" "}
+                Dr. O. Kavitha, MBBS MD in General Medicine,{" "}
               </span>
               complements our team with her extensive expertise and six years of
               experience. She is available from 9 am to 2 pm, providing
@@ -40,8 +42,8 @@ const About = () => {
               Our facility is equipped with essential diagnostic tools,
               including ECG and laboratory services, to support accurate and
               efficient diagnosis and treatment. At SK Healthcare, we are
-              committed to delivering reliable and compassionate care, tailored
-              to meet your individual health needs.
+              committed to deliver reliable and compassionate care, tailored to
+              meet your individual health needs.
             </p>
 
             <p>
@@ -49,8 +51,8 @@ const About = () => {
               common health conditions, including respiratory issues,
               cardiovascular problems, and digestive disorders. Our experienced
               team offers effective management for conditions like asthma,
-              hypertension, and GERD, utilizing both medications and lifestyle
-              recommendations.
+              diabetics, hypertension, and GERD, utilizing both medications and
+              lifestyle recommendations.
             </p>
             <p>
               We also provide care for endocrine disorders, musculoskeletal
