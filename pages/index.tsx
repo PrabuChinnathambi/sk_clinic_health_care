@@ -16,8 +16,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>SK Heralthcare</title>
-        <meta name="description" content="Healthcare Clinic" />
+        <title>SK Healthcare</title>
+        <meta name="description" content="Sk Healthcare Clinic" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/assets/images/sk_healthcare_logo_Icon.ico" />
       </Head>
