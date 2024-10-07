@@ -8,9 +8,34 @@
   }
 }
 
-.scrollbarHide::-webkit-scrollbar {
+/* .scrollbarHide::-webkit-scrollbar {
   display: none;
+} */
+
+/* Global body background color */
+body {
+  @apply bg-bodyColor; /* Replace 'bg-bodyColor' with your desired color class */
 }
+
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 13px; /* Width of the scrollbar */
+  height: 13px; /* Height of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(147, 146, 146, 0.2); /* Background of the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(100, 100, 100, 0.6); /* Color of the scrollbar thumb */
+  border-radius: 1px; /* Roundness of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(100, 100, 100, 0.8); /* Color when hovering */
+}
+
 .active {
   color: #64ffda;
 }
